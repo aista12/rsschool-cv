@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="CV of Sabrina Xurramova - Software Engineer"
+        />
+        <title>Sabrina Xurramova | Software Engineer</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+
+        <header class="hero">
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a href="#intro">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sky">
+                <div class="night-sky">
+                    <div class="stars"></div>
+                    <div class="moon"></div>
+                </div>
+
+                <div class="day-sky">
+                    <div class="sun"></div>
+
+                    <div class="cloud cloud-one"></div>
+                    <div class="cloud cloud-two"></div>
+                </div>
+            </div>
+
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to day"
+            >
+                <span class="moon-symbol">☾</span>
+
+                <span class="toggle-line"></span>
+
+                <span class="sun-symbol">☀</span>
+            </button>
+
+            <div class="header-words">
+                <p>SOFTWARE ENGINEER</p>
+
+                <h1>Sabrina Xurramova</h1>
+            </div>
+        </header>
+
+
+        <main class="cv-page">
+
+
+            <section class="cv-section intro-section" id="intro">
+                <div class="photo-area">
+                    <div class="photo-frame">
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Portrait of Sabrina Xurramova"
+                        />
+                    </div>
+                </div>
+
+                <div class="intro-content">
+                    <h2
+                        class="animated-title"
+                        data-text="SOFTWARE ENGINEER"
+                    ></h2>
+
+                    <p class="intro-description">
+                        I build software with a focus on understanding
+                        what happens behind the interface. I enjoy
+                        working with frontend and backend systems, APIs, databases
+                        and the logic that connects everything
+                        together.
+                    </p>
+                </div>
+
+
+                <svg
+                    class="journey-arrow arrow-intro"
+                    viewBox="0 0 500 350"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <marker
+                            id="arrow-head-intro"
+                            viewBox="0 0 10 10"
+                            refX="8"
+                            refY="5"
+                            markerWidth="7"
+                            markerHeight="7"
+                            orient="auto"
+                        >
+                            <path d="M 0 0 L 10 5 L 0 10 Z"></path>
+                        </marker>
+                    </defs>
+
+                    <path
+                        class="arrow-line"
+                        d="M 200 80
+           C 0 120,
+             650 220,
+             0   400"
+                        marker-end="url(#arrow-head-intro)"
+                    ></path>
+                </svg>
+            </section>
+
+
+            <section class="cv-section skills-section" id="skills">
+                <div class="skills-content">
+                    <div class="section-label">
+                        <h2
+                            class="animated-title"
+                            data-text="SKILLS"
+                        ></h2>
+                    </div>
+
+                    <ul class="skills-list">
+                        <li class="skill-item">React</li>
+
+                        <li class="skill-item">TypeScript</li>
+
+                        <li class="skill-item">Node.js</li>
+
+                        <li class="skill-item">NestJS</li>
+
+                        <li class="skill-item">Express</li>
+
+                        <li class="skill-item">PostgreSQL</li>
+
+                        <li class="skill-item">Prisma</li>
+
+                        <li class="skill-item">REST API</li>
+
+                        <li class="skill-item">JWT</li>
+
+                        <li class="skill-item">Git</li>
+
+                        <li class="skill-item">Swagger</li>
+
+                        <li class="skill-item">AWS</li>
+                    </ul>
+                </div>
+
+
+                <svg
+                    class="journey-arrow arrow-projects"
+                    viewBox="0 0 700 400"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <marker
+                            id="arrow-head-projects"
+                            viewBox="0 0 10 10"
+                            refX="8"
+                            refY="5"
+                            markerWidth="7"
+                            markerHeight="7"
+                            orient="auto-start-reverse"
+                        >
+                            <path d="M 0 0 L 10 5 L 0 10 Z"></path>
+                        </marker>
+                    </defs>
+
+                    <path
+                        class="arrow-line"
+                        d="M 0 100
+           C -200 400,
+             50 220,
+             400   400"
+                        marker-end="url(#arrow-head-projects)"
+                    ></path>
+                </svg>
+            </section>
+
+
+
+            <section
+                class="cv-section projects-section"
+                id="projects"
+            >
+                <div class="projects-wrapper">
+                    <div class="projects-frame">
+                        <div class="projects-screen">
+                            <div class="section-label projects-title">
+                                <h2
+                                    class="animated-title"
+                                    data-text="PROJECTS"
+                                ></h2>
+                            </div>
+
+
+                            <div
+                                class="projects-grid"
+                                id="projectsGrid"
+                            ></div>
+
+
+                            <article
+                                class="project-detail"
+                                id="projectDetail"
+                            >
+                                <button
+                                    class="back-button"
+                                    id="backButton"
+                                    type="button"
+                                >
+                                    ← BACK
+                                </button>
+
+                                <div class="project-detail-content">
+                                    <p
+                                        class="project-detail-title animated-title"
+                                        id="projectDetailTitle"
+                                    ></p>
+
+                                    <p
+                                        class="project-detail-subtitle"
+                                        id="projectDetailSubtitle"
+                                    ></p>
+
+                                    <div
+                                        class="project-detail-description"
+                                        id="projectDetailDescription"
+                                    ></div>
+
+                                    <div
+                                        class="project-tech"
+                                        id="projectTech"
+                                    ></div>
+
+                                    <div class="project-links">
+                                        <a
+                                            id="githubLink"
+                                            href="#"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            VIEW CODE
+                                        </a>
+
+                                        <a
+                                            id="demoLink"
+                                            href="#"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            PLAY DEMO
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="code-section" id="code">
+                <svg
+                    class="journey-arrow arrow-code"
+                    viewBox="0 0 600 350"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <marker
+                            id="arrow-head-background"
+                            viewBox="0 0 10 10"
+                            refX="8"
+                            refY="5"
+                            markerWidth="7"
+                            markerHeight="7"
+                            orient="110"
+                        >
+                            <path d="M 0 0 L 10 5 L 0 10 Z"></path>
+                        </marker>
+                    </defs>
+
+                    <path
+                        class="arrow-line"
+                        d="M 500 20
+           C 20 110,
+             350 260,
+             300 310"
+                        marker-end="url(#arrow-head-background)"
+                    ></path>
+                </svg>
+                <h2
+                    class="animated-title"
+                    data-text="CODE EXAMPLE"
+                ></h2>
+
+                <pre><code>
+                    function squareDigits(num) {
+
+                        return Number(
+                            String(num)
+                                .split("")
+                                .map(digit => Number(digit) ** 2)
+                                .join("")
+                        );
+
+                    }
+                </code></pre>
+            </section>
+
+
+
+            <section
+                class="cv-section background-section"
+                id="experience"
+            >
+
+                <svg
+                    class="journey-arrow arrow-background"
+                    viewBox="0 0 600 350"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <marker
+                            id="arrow-head-background"
+                            viewBox="0 0 10 10"
+                            refX="8"
+                            refY="5"
+                            markerWidth="7"
+                            markerHeight="7"
+                            orient="110"
+                        >
+                            <path d="M 0 0 L 10 5 L 0 10 Z"></path>
+                        </marker>
+                    </defs>
+
+                    <path
+                        class="arrow-line"
+                        d="M 500 20
+           C 20 110,
+             350 260,
+             300 310"
+                        marker-end="url(#arrow-head-background)"
+                    ></path>
+                </svg>
+
+                <div class="background-content">
+
+                    <div class="background-block">
+                        <h2
+                            class="animated-title"
+                            data-text="EXPERIENCE"
+                        ></h2>
+
+                        <div class="experience-item">
+                            <h3>
+                                Full-Stack Software Engineer Intern
+                            </h3>
+
+                            <span>
+                                Vention · Dec 2025 — Apr 2026
+                            </span>
+
+                            <ul class="experience-points">
+                                <li>
+                                    Worked as part of a development
+                                    team on a real production project.
+                                </li>
+
+                                <li>
+                                    Developed and integrated
+                                    full-stack features using React on
+                                    the frontend and Node.js / NestJS
+                                    on the backend.
+                                </li>
+
+                                <li>
+                                    Built and worked with REST APIs,
+                                    authentication flows and backend
+                                    business logic.
+                                </li>
+
+                                <li>
+                                    Designed and worked with
+                                    PostgreSQL databases using Prisma
+                                    as well as raw SQL queries.
+                                </li>
+
+                                <li>
+                                    Investigated bugs, traced problems
+                                    across frontend and backend
+                                    layers, and implemented fixes.
+                                </li>
+
+                                <li>
+                                    Used Swagger for API documentation
+                                    and testing.
+                                </li>
+
+                                <li>
+                                    Worked with Git-based development,
+                                    pull requests and code reviews.
+                                </li>
+
+                                <li>
+                                    Collaborated with a team
+                                    consisting of developers, a
+                                    Project Manager and a Tech Lead.
+                                </li>
+                            </ul>
+
+                            <div class="experience-tech">
+                                React · TypeScript · Node.js · NestJS
+                                · PostgreSQL · Prisma · REST API · Git
+                                · Swagger
+                            </div>
+                        </div>
+                    </div>
+
+]
+                    <div class="background-block" id="education">
+                        <h2
+                            class="animated-title"
+                            data-text="EDUCATION"
+                        ></h2>
+
+                        <div class="education-item">
+                            <h3>
+                                Westminster International University
+                                in Tashkent
+                            </h3>
+
+                            <span>
+                                BSc Computer Science · Sep 2023 — Apr
+                                2027
+                            </span>
+
+                            <ul class="education-points">
+                                <li>
+                                    Studying computer science with a
+                                    focus on software development and
+                                    computer systems.
+                                </li>
+
+                                <li>
+                                    Developed a strong foundation in
+                                    programming, object-oriented
+                                    programming and data structures.
+                                </li>
+
+                                <li>
+                                    Studied databases, operating
+                                    systems, networking, software
+                                    engineering and system design.
+                                </li>
+
+                                <li>
+                                    Worked on individual and
+                                    team-based software development
+                                    projects.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="background-block">
+                        <h2
+                            class="animated-title"
+                            data-text="LANGUAGES"
+                        ></h2>
+
+                        <div class="languages-list">
+                            <span>English — B2</span>
+
+                            <span>Russian — B1</span>
+
+                            <span>Uzbek — Native</span>
+                        </div>
+                    </div>
+                </div>
+                <svg
+                    class="journey-arrow arrow-contact"
+                    viewBox="0 0 500 350"
+                    aria-hidden="true"
+                >
+                    <defs>
+                        <marker
+                            id="arrow-head-intro"
+                            viewBox="0 0 10 10"
+                            refX="8"
+                            refY="5"
+                            markerWidth="7"
+                            markerHeight="7"
+                            orient="auto"
+                        >
+                            <path d="M 0 0 L 10 5 L 0 10 Z"></path>
+                        </marker>
+                    </defs>
+
+                    <path
+                        class="arrow-line"
+                        d="M 200 80
+           C 0 120,
+             650 220,
+             0   400"
+                        marker-end="url(#arrow-head-intro)"
+                    ></path>
+                </svg>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <h2 class="animated-title" data-text="CONTACT"></h2>
+
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:sabrinaxurramova2@gmail.com">
+                            sabrinaxurramova2@gmail.com
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://github.com/aista12"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/sabrina-xurramova/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <li>Discord: savi_099</li>
+                </ul>
+            </section>
+        </main>
+
+
+
+        <footer class="footer">
+            <a
+                href="https://github.com/aista12"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <span> © 2026 Sabrina Xurramova </span>
+
+            <a
+                href="https://rs.school/courses/short-track"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img src="assets/rss-logo.svg" alt="RS School" />
+            </a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
